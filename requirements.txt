@@ -1,11 +1,13 @@
-scikit-learn>=1.0.0
-pandas
-numpy
-spacy
-joblib
-streamlit
-Pipeline
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+# Core requirements
+scikit-learn==1.3.0
+pandas==2.0.3
+numpy==1.24.3
+streamlit==1.25.0
+joblib==1.3.2
 
-xgboost
+# NLP processing
+spacy==3.7.1
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 
+# Additional text processing (included in sklearn but explicitly listed)
+regex==2023.10.3
